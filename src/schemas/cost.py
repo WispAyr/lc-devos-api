@@ -28,5 +28,6 @@ class CostSummary(BaseModel):
     total_tokens_all_time: int
     estimated_cost_today_cents: int
     estimated_cost_all_time_cents: int
+    daily_token_budget: Optional[int]
     budget_remaining_today: Optional[int]
     budget_percentage_used: Optional[float]

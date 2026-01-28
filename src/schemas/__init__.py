@@ -5,6 +5,7 @@ from src.schemas.project import ProjectCreate, ProjectUpdate, ProjectResponse
 from src.schemas.runplan import RunPlanCreate, RunPlanUpdate, RunPlanResponse
 from src.schemas.audit import AuditLogResponse
 from src.schemas.cost import CostRecordResponse, CostSummary
+from src.schemas.design import DesignChatRequest, DesignChatResponse
 
 __all__ = [
     "AgentCreate",
@@ -23,4 +24,6 @@ __all__ = [
     "AuditLogResponse",
     "CostRecordResponse",
     "CostSummary",
+    "DesignChatRequest",
+    "DesignChatResponse",
 ]

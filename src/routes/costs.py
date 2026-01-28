@@ -88,6 +88,7 @@ async def get_cost_summary(
         total_tokens_all_time=tokens_total,
         estimated_cost_today_cents=cost_today,
         estimated_cost_all_time_cents=cost_total,
+        daily_token_budget=project.daily_token_budget if project else None,
         budget_remaining_today=budget_remaining,
         budget_percentage_used=budget_percentage
     )

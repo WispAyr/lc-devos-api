@@ -17,6 +17,9 @@ from src.routes import (
     audit_router,
     costs_router,
     health_router,
+    mcp_router,
+    design_router,
+    build_router,
 )
 
 
@@ -55,6 +58,9 @@ app.include_router(projects_router)
 app.include_router(runplans_router)
 app.include_router(audit_router)
 app.include_router(costs_router)
+app.include_router(mcp_router)
+app.include_router(design_router)
+app.include_router(build_router)
 
 
 @app.get("/")
